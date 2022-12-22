@@ -1,15 +1,11 @@
 import Image from 'next/image'
 import hero from '../public/images/landing-hero.png'
-import { Button } from '../components'
+import { Button, PageHeader } from '../components'
 
 export default function LandingPage() {
   return (
     <div className='container is-fluid'>
-      <div className='pt-6 pb-4'>
-        <h1 className='accent-font is-size-2 has-text-centered is-size-1-desktop'>
-          Date Night
-        </h1>
-      </div>
+      <PageHeader headerText={'Date Night'}/>
       <section className='hero is-small'>
         <Image
           src={hero}
