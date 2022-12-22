@@ -5,7 +5,7 @@ import { Button } from '../components'
 export default function LandingPage() {
   return (
     <div className='container is-fluid'>
-      <div className='py-4'>
+      <div className='pt-6 pb-4'>
         <h1 className='accent-font is-size-2 has-text-centered is-size-1-desktop'>
           Date Night
         </h1>
@@ -14,7 +14,7 @@ export default function LandingPage() {
         <Image
           src={hero}
           alt='wine glasses cheering'
-          className='center small-image pt-1'
+          className='center hero-image pt-1'
         />
       </section>
       <div className='py-4'>

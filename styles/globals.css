@@ -51,7 +51,7 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .small-image {
+  .hero-image {
     height: 250px;
     width: 350px;
   }
