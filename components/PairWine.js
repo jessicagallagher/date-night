@@ -4,8 +4,6 @@ import { PageHeader, Button } from '../components'
 export default function PairWine() {
   const [category, setCategory] = useState('');
   const [btnText, setBtnText] = useState('');
-
-  
   
   return (
     <div className='container is-fluid'>

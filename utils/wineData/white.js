@@ -5,7 +5,7 @@ export const whiteWine = [
   },
   {
     id: 'pinot_blanc',
-    name: 'pinot_blanc',
+    name: 'pinot blanc',
   },
   {
     id: 'cortese',
@@ -41,7 +41,7 @@ export const whiteWine = [
   },
   {
     id: 'white_burgundy',
-    name: 'white_burgundy',
+    name: 'white burgundy',
   },
   {
     id: 'chardonnay',
@@ -49,11 +49,11 @@ export const whiteWine = [
   },
   {
     id: 'gruener_veltliner',
-    name: 'gruener_veltliner',
+    name: 'gruener veltliner',
   },
   {
     id: 'white_rioja',
-    name: 'white_rioja',
+    name: 'white rioja',
   },
   {
     id: 'frascati',
@@ -65,7 +65,7 @@ export const whiteWine = [
   },
   {
     id: 'l_acadie_blanc',
-    name: 'l_acadie_blanc',
+    name: 'L\'Acadie Blanc',
   },
   {
     id: 'trebbiano',
@@ -73,7 +73,7 @@ export const whiteWine = [
   },
   {
     id: 'sauvignon_blanc',
-    name: 'sauvignon_blanc',
+    name: 'sauvignon blanc',
   },
   {
     id: 'catarratto',
@@ -101,11 +101,11 @@ export const whiteWine = [
   },
   {
     id: 'pinot_grigio',
-    name: 'pinot_grigio',
+    name: 'pinot grigio',
   },
   {
     id: 'dry_riesling',
-    name: 'dry_riesling',
+    name: 'riesling',
   },
   {
     id: 'torrontes',
@@ -113,7 +113,7 @@ export const whiteWine = [
   },
   {
     id: 'mueller_thurgau',
-    name: 'mueller_thurgau',
+    name: 'mueller thurgau',
   },
   {
     id: 'gewurztraminer',
@@ -125,11 +125,11 @@ export const whiteWine = [
   },
   {
     id: 'chenin_blanc',
-    name: 'chenin_blanc',
+    name: 'chenin blanc',
   },
   {
     id: 'white_bordeaux',
-    name: 'white_bordeaux',
+    name: 'white bordeaux',
   },
   {
     id: 'semillon',
@@ -149,6 +149,6 @@ export const whiteWine = [
   },
   {
     id: 'lillet_blanc',
-    name: 'lillet_blanc',
+    name: 'lillet blanc',
   },
 ];
