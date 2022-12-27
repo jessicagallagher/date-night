@@ -1,126 +1,164 @@
-export const red = [
+const redWine = [
   {
-    id: '',
-    name: '',
+    id: 'petite_sirah',
+    name: 'petite syrah',
   },
   {
-    id: '',
-    name: '',
+    id: 'zweigelt',
+    name: 'zweigelt',
   },
   {
-    id: '',
-    name: '',
+    id: 'baco_noir',
+    name: 'baco noir',
   },
   {
-    id: '',
-    name: '',
+    id: 'bonarda',
+    name: 'bonarda',
   },
   {
-    id: '',
-    name: '',
+    id: 'cabernet_franc',
+    name: 'cabernet franc',
   },
   {
-    id: '',
-    name: '',
+    id: 'bairrada',
+    name: 'bairrada',
   },
   {
-    id: '',
-    name: '',
+    id: 'barbera_wine',
+    name: 'barbera',
   },
   {
-    id: '',
-    name: '',
+    id: 'primitivo',
+    name: 'primitivo',
   },
   {
-    id: '',
-    name: '',
+    id: 'pinot_noir',
+    name: 'pinot noir',
   },
   {
-    id: '',
-    name: '',
+    id: 'nebbiolo',
+    name: 'nebbiolo',
   },
   {
-    id: '',
-    name: '',
+    id: 'dolcetto',
+    name: 'dolcetto',
   },
   {
-    id: '',
-    name: '',
+    id: 'tannat',
+    name: 'tannat',
   },
   {
-    id: '',
-    name: '',
+    id: 'negroamaro',
+    name: 'negroamaro',
   },
   {
-    id: '',
-    name: '',
+    id: 'red_burgundy',
+    name: 'red burgundy',
   },
   {
-    id: '',
-    name: '',
+    id: 'corvina',
+    name: 'corvina',
   },
   {
-    id: '',
-    name: '',
+    id: 'rioja',
+    name: 'rioja',
   },
   {
-    id: '',
-    name: '',
+    id: 'cotes_du_rhone',
+    name: 'cotes du rhone',
   },
   {
-    id: '',
-    name: '',
+    id: 'grenache',
+    name: 'grenache',
   },
   {
-    id: '',
-    name: '',
+    id: 'malbec',
+    name: 'malbec',
   },
   {
-    id: '',
-    name: '',
+    id: 'zinfandel',
+    name: 'zinfandel',
   },
   {
-    id: '',
-    name: '',
+    id: 'sangiovese',
+    name: 'sangiovese',
   },
   {
-    id: '',
-    name: '',
+    id: 'carignan',
+    name: 'carignan',
   },
   {
-    id: '',
-    name: '',
+    id: 'carmenere',
+    name: 'carmenere',
   },
   {
-    id: '',
-    name: '',
+    id: 'cesanese',
+    name: 'cesanese',
   },
   {
-    id: '',
-    name: '',
+    id: 'cabernet_sauvignon',
+    name: 'cabernet sauvignon',
   },
   {
-    id: '',
-    name: '',
+    id: 'aglianico',
+    name: 'aglianico',
   },
   {
-    id: '',
-    name: '',
+    id: 'tempranillo',
+    name: 'tempranillo',
   },
   {
-    id: '',
-    name: '',
+    id: 'shiraz',
+    name: 'shiraz',
   },
   {
-    id: '',
-    name: '',
+    id: 'mourvedre',
+    name: 'mourvedre',
   },
   {
-    id: '',
-    name: '',
+    id: 'merlot',
+    name: 'merlot',
   },
   {
-    id: '',
-    name: '',
+    id: 'nero_d_avola',
+    name: "Nero d'Avola",
+  },
+  {
+    id: 'bordeaux',
+    name: 'bordeaux',
+  },
+  {
+    id: 'marsala',
+    name: 'marsala',
+  },
+  {
+    id: 'port',
+    name: 'port',
+  },
+  {
+    id: 'gamay',
+    name: 'gamay',
+  },
+  {
+    id: 'dornfelder',
+    name: 'dornfelder',
+  },
+  {
+    id: 'concord_wine',
+    name: 'concord wine',
+  },
+  {
+    id: 'sparkling_red_wine',
+    name: 'sparkling red wine',
+  },
+  {
+    id: 'pinotage',
+    name: 'pinotage',
+  },
+  {
+    id: 'agiorgitiko',
+    name: 'agiorgitiko',
   },
 ];
+
+export default redWine
