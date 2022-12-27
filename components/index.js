@@ -1,11 +1,13 @@
 import LandingPage from './LandingPage';
-import Button from './common/Button';
+import ButtonWithLink from './common/ButtonWithLink';
 import PairWine from './PairWine';
 import PageHeader from './common/PageHeader';
+import ButtonWithoutLink from './common/ButtonWithoutLink';
 
 export {
   LandingPage,
-  Button,
+  ButtonWithLink,
   PairWine,
   PageHeader,
+  ButtonWithoutLink,
 }
