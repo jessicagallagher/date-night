@@ -1,4 +1,4 @@
-export const whiteWine = [
+const whiteWine = [
   {
     id: 'assyrtiko',
     name: 'assyrtiko',
@@ -152,3 +152,5 @@ export const whiteWine = [
     name: 'lillet blanc',
   },
 ];
+
+export default whiteWine

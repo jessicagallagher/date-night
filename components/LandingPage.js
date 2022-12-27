@@ -4,8 +4,6 @@ import hero from '../public/images/landing-hero.png'
 import { Button, PageHeader } from '../components'
 
 export default function LandingPage() {
-
-
   return (
     <div className='container is-fluid'>
       <PageHeader headerText={'Somm'} />
