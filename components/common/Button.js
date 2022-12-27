@@ -1,7 +1,9 @@
-export default function Button({ buttonClass, buttonText }) {
+import Link from 'next/link';
+
+export default function Button({ buttonClass, buttonText, url}) {
   return (
     <button className={`button ${buttonClass}`}>
-      {buttonText}
+      <Link href={`${url}`}>{buttonText}</Link>
     </button>
-  )
+  );
 }
