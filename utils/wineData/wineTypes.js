@@ -7,6 +7,10 @@ const wineTypes = [
     id: 'red',
     type: 'red',
   },
+  {
+    id: 'dessert',
+    type: 'Dessert wine'
+  }
 ]
 
 export default wineTypes
