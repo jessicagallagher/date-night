@@ -9,7 +9,11 @@ const wineTypes = [
   },
   {
     id: 'dessert',
-    type: 'Dessert wine'
+    type: 'dessert wine'
+  },
+  {
+    id: 'sparkling',
+    type: 'sparkling wine'
   }
 ]
 

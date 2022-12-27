@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { PageHeader, ButtonWithoutLink } from '../components';
-import { wineTypes, whiteWine, redWine, dessertWine } from '../utils/wineData';
+import { wineTypes, whiteWine, redWine, dessertWine, sparklingWine } from '../utils/wineData';
 
 export default function PairWine() {
   const [hideTypeSection, setHideTypeSection] = useState(false);
   const [showWhite, setShowWhite] = useState(false);
   const [showRed, setShowRed] = useState(false);
   const [showDessert, setShowDessert] = useState(false);
+  const [showSparkling, setShowSparkling] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -23,9 +24,14 @@ export default function PairWine() {
         setShowRed(true);
         break;
 
-      case 'Dessert wine':
+      case 'dessert wine':
         setHideTypeSection(true);
         setShowDessert(true);
+        break;
+      
+      case 'sparkling wine':
+        setHideTypeSection(true);
+        setShowSparkling(true);
         break;
 
       default:
@@ -40,6 +46,7 @@ export default function PairWine() {
     setShowWhite(false);
     setShowRed(false);
     setShowDessert(false);
+    setShowSparkling(false);
     setHideTypeSection(false);
   };
 
@@ -150,6 +157,37 @@ export default function PairWine() {
             </div>
             <div className='buttons is-centered is-hidden-mobile'>
               {dessertWine
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((item) => (
+                  <button className='button is-rounded' key={item.id}>
+                    {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+                  </button>
+                ))}
+            </div>
+          </div>
+        )}
+
+        {/* sparkling wine */}
+        {showSparkling && (
+          <div className='mx-auto mt-4'>
+            <ButtonWithoutLink
+              buttonText={'Start over'}
+              buttonClass={'mb-6 is-danger is-rounded'}
+              clickHandler={handleStartOver}
+            />
+            <div className='select is-hidden-tablet'>
+              <select>
+                {sparklingWine
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((item) => (
+                    <option value='' key={item.id}>
+                      {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+                    </option>
+                  ))}
+              </select>
+            </div>
+            <div className='buttons is-centered is-hidden-mobile'>
+              {sparklingWine
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((item) => (
                   <button className='button is-rounded' key={item.id}>
