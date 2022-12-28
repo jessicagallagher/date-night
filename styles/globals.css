@@ -43,10 +43,17 @@ a {
 
 /* media queries */
 @media (min-width: 640px) {
-  .landing-buttons, .wine-type-buttons {
+  .landing-buttons {
     flex-direction: row !important;
     gap: 3rem;
     justify-content: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .wine-type-buttons {
+    flex-direction: row !important;
+    justify-content: space-around !important;
   }
 }
 

@@ -9,12 +9,20 @@ const wineTypes = [
   },
   {
     id: 'dessert',
-    type: 'dessert wine'
+    type: 'dessert wine',
   },
   {
     id: 'sparkling',
-    type: 'sparkling wine'
+    type: 'sparkling wine',
+  },
+  {
+    id: 'sherry',
+    type: 'sherry',
+  },
+  {
+    id: 'vermouth',
+    type: 'vermouth',
   }
-]
+];
 
 export default wineTypes

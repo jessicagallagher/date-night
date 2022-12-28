@@ -3,6 +3,7 @@ import ButtonWithLink from './common/ButtonWithLink';
 import PairWine from './PairWine';
 import PageHeader from './common/PageHeader';
 import ButtonWithoutLink from './common/ButtonWithoutLink';
+import WineSelections from './WineSelections';
 
 export {
   LandingPage,
@@ -10,4 +11,5 @@ export {
   PairWine,
   PageHeader,
   ButtonWithoutLink,
-}
+  WineSelections,
+};
