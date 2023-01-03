@@ -21,8 +21,8 @@ export default function WineSelections() {
   const [showVermouth, setShowVermouth] = useState(false);
   const [data, setData] = useState([])
 
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY
-  const url = process.env.NEXT_PUBLIC_BASE_URL
+  const apiKey = process.env.API_KEY
+  const url = process.env.BASE_URL
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -79,7 +79,7 @@ export default function WineSelections() {
   const handleChange = (e) => {
     e.preventDefault();
 
-    axios.get(`${url}food/wine/dishes?wine=${e.target.value}&apiKey=${apiKey}`).then((res) => {
+    axios.get(`${process.env.baseURL}food/wine/dishes?wine=${e.target.value}&apiKey=${process.env.apiKey}`).then((res) => {
       setData(res.data.pairings)
     })
       .catch((error) => {
@@ -135,6 +135,7 @@ export default function WineSelections() {
                   className='button is-rounded'
                   key={item.id}
                   value={item.id}
+                  onClick={handleChange}
                 >
                   {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
                 </button>
