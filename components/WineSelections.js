@@ -7,7 +7,7 @@ import {
   dessertWine,
   sparklingWine,
   sherry,
-  vermouth
+  vermouth,
 } from '../utils/wineData';
 import { ButtonWithoutLink } from '../components';
 
@@ -19,10 +19,7 @@ export default function WineSelections() {
   const [showSparkling, setShowSparkling] = useState(false);
   const [showSherry, setShowSherry] = useState(false);
   const [showVermouth, setShowVermouth] = useState(false);
-  const [data, setData] = useState([])
-
-  const apiKey = process.env.API_KEY
-  const url = process.env.BASE_URL
+  const [data, setData] = useState([]);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -47,12 +44,12 @@ export default function WineSelections() {
         setHideTypeSection(true);
         setShowSparkling(true);
         break;
-      
+
       case 'sherry':
         setHideTypeSection(true);
         setShowSherry(true);
         break;
-      
+
       case 'vermouth':
         setHideTypeSection(true);
         setShowVermouth(true);
@@ -79,16 +76,17 @@ export default function WineSelections() {
   const handleChange = (e) => {
     e.preventDefault();
 
-    axios.get(`${process.env.baseURL}food/wine/dishes?wine=${e.target.value}&apiKey=${process.env.apiKey}`).then((res) => {
-      setData(res.data.pairings)
-    })
-      .catch((error) => {
-        console.log(error.toJSON())
-        setData(null)
+    axios
+      .get(`/api/wineWithFood?wine=${e.target.value}`, {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
       })
-  }
-
-  console.log(data)
+      .then((res) => {
+        setData(res.data.data.pairings);
+      });
+  };
 
   return (
     <>
@@ -133,6 +131,7 @@ export default function WineSelections() {
               .map((item) => (
                 <button
                   className='button is-rounded'
+                  type='submit'
                   key={item.id}
                   value={item.id}
                   onClick={handleChange}
