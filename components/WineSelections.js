@@ -21,9 +21,8 @@ export default function WineSelections() {
   const [showSherry, setShowSherry] = useState(false);
   const [showVermouth, setShowVermouth] = useState(false);
   const [data, setData] = useState([]);
-  const [foodImg, setFoodImg] = useState('');
-  const [url, setUrl] = useState('');
   const [wineName, setWineName] = useState('');
+  const [searchResults, setSearchResults] = useState([])
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -90,9 +89,9 @@ export default function WineSelections() {
       .catch((error) => {
         console.log(error);
       });
-    console.log(data)
+    // console.log(data)
     const foodName = data
-    console.log(foodName)
+    // console.log(foodName)
     foodName.map((foodName) => {
       axios
         .get(`/api/getFoodImages?foodName=${foodName}`, {
@@ -102,12 +101,20 @@ export default function WineSelections() {
           },
         })
         .then((res) => {
-          console.log(res.data.data);
+          // console.log(res.data.data.searchResults);
+          setSearchResults(res.data.data.searchResults)
         })
         .catch((error) => {
           console.log(error);
         });
     })
+    const results = searchResults;
+
+    const obj = results
+    Object.values(obj)[0];
+    console.log(typeof obj[0].results)
+    const firstResult = obj[0].results // should firstResult be a state?
+
     // data.map((foodName) => {
     //   console.log(foodName);
     //   axios.get(`/api/getFoodImages?foodName=${foodName}`, {
@@ -120,8 +127,6 @@ export default function WineSelections() {
   };
 
   // console.log(data)
-
-  // console.log(foodImg)
 
   return (
     <>
